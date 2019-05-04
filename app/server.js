@@ -8,13 +8,15 @@ var app = express();
 var PORT = process.env.PORT || 8080;
 
 var apiRoutes = require("");
-var htmlRouts = require("");
+var htmlRoutes = require("");
 
-app.use();
-app.use();
-app.use();
-app.use();
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser,json());
+app.use(apiRoutes);
+app.use(htmlRoutes);
 
 
-app.listen();
+app.listen(PORT, () => {
+    console.log("Server Startted and listening on port" + PORT);
+});
 
