@@ -1,4 +1,4 @@
-// server files
+// EXPRESS SERVER w Route file references
 
 var express = require("express");
 var bodyParser = require("body-parser");
