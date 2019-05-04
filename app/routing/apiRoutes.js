@@ -11,7 +11,7 @@ apirouter.get("/api/siblings", function(req,res){
 });
 
 
-apirouter.post("/api/newSib", function(req,res){
+apirouter.post("/data/newSib", function(req,res){
 
     console.log(req.body);
 
