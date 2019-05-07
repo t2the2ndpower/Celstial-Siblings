@@ -7,8 +7,8 @@ var path = require("path");
 var app = express();
 var PORT = process.env.PORT || 8080;
 
-var apiRoutes = require("../app/routing/apiRoutes.js");
-var htmlRoutes = require("../app/routing/htmlRoutes.js");
+var apiRoutes = require("./app/routing/apiRoutes.js");
+var htmlRoutes = require("./app/routing/htmlRoutes.js");
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
